@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { cn } from 'utils/tw'
 
 const Footer = () => {
-  const [date, setDate] = useState()
+  const [date, setDate] = useState<string | undefined>(undefined)
 
   useEffect(() => {
     setDate(dayjs().format('dddd, MMMM D'))
